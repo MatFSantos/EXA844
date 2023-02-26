@@ -1,0 +1,119 @@
+body{
+    padding: 0;
+    margin: 0;
+    font-family: 'Courier New', Courier, monospace;
+    background-color: aquamarine;
+}
+
+.header{
+    display: flex;
+    justify-content: center;
+    margin: 15px;
+    padding: 15px;
+    border: 2px solid #000000;
+    border-radius: 10px;
+    box-shadow: 1px 1px 15px #000000;
+    background-color: white;
+    font-weight: bold;
+    font-size: 35px;
+}
+
+.body{
+    width: 100%;
+    display: flex;
+    flex-direction: column;
+    justify-content: center;
+    align-items: center;
+}
+
+.informations{
+    width: 600px;
+    height: 200px;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    flex-direction: column;
+    box-shadow: 1px 1px 15px #000000;
+    border-radius: 10px;
+    border: 2px solid #000000;
+    padding: 30px;
+    transition: all ease 1s;
+    animation: animateFade-in 1s;
+}
+.informations > div{
+    width: 100%;
+    display: flex;
+    justify-content: space-between;
+    margin-bottom: 15px;
+}
+
+.informations > div > .field{
+ border-bottom: 1px solid #000000;
+ font-weight: bold;
+}
+
+.hobby{
+    margin-top: 10px;
+
+    display: inline !important;
+}
+
+.hobby > .field {
+    text-align: center;
+}
+
+ul.hobby-list{
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+}
+
+li.hobby-item{
+    transition: all ease 0.5s;
+    cursor: grab ;
+    width: 200px;
+}
+
+li.hobby-item:hover{
+    transform: scale(1.1);
+}
+
+img{
+    animation: animateScale 1s;
+    border-radius: 10px;
+    margin: 15px;
+
+}
+
+@keyframes animateFade-in {
+    from {
+        transform: translateX(-2000px);
+    }
+    to {
+        transform: translateX(0);
+    }
+}
+
+@keyframes animateScale{
+    from {
+        transform: scale(0) ;
+    }
+
+    to {
+        transform: scale(1);
+    }
+}
+
+.easter-egg:hover{
+    opacity: 1;
+}
+
+.easter-egg {
+    background-color: #000000;
+    color: white;
+    opacity: 0;
+    position: absolute;
+    z-index: 1;
+    right: 40%;
+    transition: all ease 1s;
+}
