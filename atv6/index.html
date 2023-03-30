@@ -14,14 +14,16 @@
           display: flex;
           height: 100vh;
           width: 100vw;
+          flex-direction: column;
           align-items: center;
           justify-content: center;
           gap: 16px;
         "
       >
         <label for="input-name">Nome</label>
-        <input id="input-name" name="nome" type="text" />
-        <input id="input-name" name="mensagem" type="text" />
+        <input id="input-name" name="name" type="text" />
+        <label for="input-message">Mensagem</label>
+        <input id="input-message" name="message" type="text" />
         <button type="submit">Enviar</button>
       </div>
     </form>
