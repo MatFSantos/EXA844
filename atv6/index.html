@@ -1,0 +1,29 @@
+<!DOCTYPE html>
+<html lang="en">
+  <head>
+    <meta charset="UTF-8" />
+    <meta http-equiv="X-UA-Compatible" content="IE=edge" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+    <title>CGI PYTHON</title>
+  </head>
+  <body>
+    <form action="./cgi-bin/index.py" method="get">
+      <div
+        class="container"
+        style="
+          display: flex;
+          height: 100vh;
+          width: 100vw;
+          align-items: center;
+          justify-content: center;
+          gap: 16px;
+        "
+      >
+        <label for="input-name">Nome</label>
+        <input id="input-name" name="nome" type="text" />
+        <input id="input-name" name="mensagem" type="text" />
+        <button type="submit">Enviar</button>
+      </div>
+    </form>
+  </body>
+</html>
