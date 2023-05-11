@@ -1,0 +1,86 @@
+* {
+    padding: 0;
+    margin: 0;
+    font-family: 'Lucida Sans', 'Lucida Sans Regular', 'Lucida Grande', 'Lucida Sans Unicode', Geneva, Verdana, sans-serif;
+}
+
+body {
+    background-color: white;
+}
+.container {
+    width: 100%;
+    max-width: 1280px;
+    margin: 0 auto;
+}
+
+.title {
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    margin: 20px;
+}
+
+.title > h3 {
+    color: #6d00f2;
+    font-weight: bolder;
+    font-size: 30px;
+    border-bottom: 2px solid #6d00f2;
+}
+
+.input {
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    margin: 10px;
+}
+
+.input > input {
+    border: 3px solid #6d00f2;
+    border-radius: 10px;
+    padding: 5px;
+    width: 35px;
+    transition: all ease 0.5s;
+    font-family: 'Lucida Sans', 'Lucida Sans Regular', 'Lucida Grande', 'Lucida Sans Unicode', Geneva, Verdana, sans-serif;
+    font-weight: bold;
+}
+
+input::placeholder {
+    color: #6d00f274;
+}
+input:hover, input:focus, input:not(:placeholder-shown) {
+    width: 400px;
+}
+
+.body{
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    flex-direction: column;
+}
+
+td, th {
+  border: 1px solid #dddddd;
+  text-align: center;
+  padding: 8px;
+}
+
+th {
+    font-weight: bolder;
+}
+
+tr:nth-child(even) {
+  background-color: #6d00f2;
+  color: white;
+}
+
+.no-messages {
+    font-weight: bold;
+    color: #6d00f2;
+    display: flex;
+    justify-content: center;
+    width: 100%;
+}
+
+.table {
+    min-width: 50%;
+}
